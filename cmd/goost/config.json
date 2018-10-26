@@ -1,0 +1,5 @@
+{
+    "listen_port":":80",
+    "metric_port":"127.0.0.1:8058",
+    "repo_root":"https://github.com/libgoost/"
+}
