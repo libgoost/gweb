@@ -23,7 +23,7 @@ func NewService(cfg *Config) *GoostService {
 
 func (g *GoostService) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path == "/" {
-		http.Redirect(w, r, g.cfg.RepoRoot, http.StatusTemporaryRedirect)
+		http.Redirect(w, r, g.cfg.RepoRoot+"/gweb/blob/master/README.md", http.StatusTemporaryRedirect)
 		return
 	}
 	g.showRepo(w, r)
